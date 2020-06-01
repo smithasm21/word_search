@@ -12,7 +12,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -49,7 +48,7 @@ public class SearchController {
             consumes = {MediaType.APPLICATION_JSON_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<SearchResponse> search(
-            @Valid @RequestBody SearchRequest searchRequest) {
+            @RequestBody SearchRequest searchRequest) {
         SearchResponse searchResponse = new SearchResponse();
 
         try {

@@ -10,9 +10,9 @@ import java.util.*;
 
 import static org.junit.Assert.*;
 
-public class SearchServiceTest {
+public class SearchServiceUnitTest {
 
-    public static File file = new File("src/main/resources/test/TestSample.txt");
+    public static File file = new File("src/main/resources/test/testSample.txt");
     SearchServiceImpl searchServiceImpl = new SearchServiceImpl();
 
     @Test
